@@ -1,0 +1,167 @@
+/* Universal */
+html, body {
+  background-color: azure;
+  font-family: "Delius", serif;
+  font-size: 16px;
+  margin: 0;
+  text-align: center;
+}
+
+/* Header */
+.content {
+  background-color: seagreen; 
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+  
+nav a {
+  margin: 0;
+  padding: 20px;
+  color: beige;
+}
+  
+nav a:hover {
+  color: blueviolet;
+}
+
+
+/* Main Content */
+
+.name {
+  background-image: url('ella-olsson-rD3YrnhTmf0-unsplash.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  height: 700px;
+  max-width: 1200px;
+  margin: 40px auto 40px auto;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  font-size: 1.65rem;
+}
+
+.mission {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  padding: 0 2rem;
+}
+
+.mission a {
+  color: blue;
+}
+
+.mission a:hover {
+  color: blueviolet;
+}
+
+.images {
+  display: flex;
+  max-width: 100%;
+  height: auto;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.img-row {
+  width: 380px; 
+  height: 250px;
+  padding: 0px 10px;
+  overflow: hidden;
+}
+
+.img-row img {
+  display: block;
+  max-width: 100%;
+  margin: auto;
+}
+
+.quotes {
+  /* width: 100%; */
+  height: auto;
+  display: flex;
+  background-color: lightseagreen;
+  align-items: center;
+  padding: 20px 30px;
+}
+
+.quote {
+  font-size: 1.35rem;
+  font-family: "Merriweather", serif;
+  color: rgb(9, 37, 160);
+}
+
+.join {
+  display: flex;
+  height: auto;
+  align-items: center;
+  justify-items: center;
+  padding: 20px;
+}
+
+.join-container {
+  margin: auto;
+}
+
+.join-img {
+  height: auto;
+  margin: auto;
+  width: 500px;
+  overflow: hidden;
+  padding: 20px;
+}
+
+.join-img img {
+  max-width: 100%;
+}
+
+footer {
+  padding-top: 1rem;
+  margin: 0;
+}
+
+@media only screen and (max-width: 1058px) {
+  .name {
+    align-items: center;
+    justify-content: center;
+    height: 32rem;
+  }
+
+  .images {
+    width: 100%;
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+@media only screen and (max-width: 720px) {
+  .name {
+    height: 20rem;
+  }
+
+  .images {
+    width: 100%;
+    flex-direction: column;
+    gap: 16px;
+  }
+}
+
+@media only screen and (max-width: 380px) {
+  .name {
+    height: 18rem;
+  }
+
+  .images {
+    width: 100%;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+}
